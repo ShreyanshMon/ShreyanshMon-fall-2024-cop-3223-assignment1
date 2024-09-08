@@ -1,13 +1,22 @@
+// fracturing.c
+// Author: Shreyansh Mondal 
+// UCFID: 165872
+// Date: 9/8/24
+// Class: COP 3223C, Professor Parra
+
 #include <stdio.h>
 #include <math.h>
-#define PI = 3.14159;
+#define PI 3.14159
 
+//Fuction that asks for user input
 double askForUserInput()
 {
     double num;
     scanf("%lf", &num);
     return num;
 }
+
+//Finds the distance between two points for the diameter of a circle
 double getDistance()
 {
     printf("Point #1 entered: x1 = ");
@@ -24,6 +33,7 @@ double getDistance()
     return distance;
 }
 
+//The rest of the methods are simple math that print what is desired.
 double calculateDistance()
 {
     double distance = getDistance();
@@ -57,6 +67,7 @@ double calculateHeight()
 
 }
 
+//main method running all of the created methods
 int main(int argc, char *argv[])
 {
     calculateDistance();
