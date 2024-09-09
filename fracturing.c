@@ -34,6 +34,7 @@ double getDistance()
 }
 
 //The rest of the methods are simple math that print what is desired.
+//I return the difficulty on a scale of 1-5 for each one except calculateDistance
 double calculateDistance()
 {
     double distance = getDistance();
@@ -59,16 +60,20 @@ double calculateArea()
 
 double calculateWidth()
 {
-
+    double width = getDistance();
+    printf("The width of the city encompassed by your request is %lf \n", width);
+    return 2;
 }
 
 double calculateHeight()
 {
-
+    double height = getDistance()/2;
+    printf("The height of the city encompassed by your request is %lf \n", height);
+    return 2;
 }
 
 //main method running all of the created methods
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
     calculateDistance();
     calculatePerimeter();
